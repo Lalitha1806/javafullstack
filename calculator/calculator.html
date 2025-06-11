@@ -1,0 +1,50 @@
+<html>
+    <head></head>
+    <body>
+        <h1 id="h1"></h1>
+        <h1 id="h2"></h1>
+        <h1 id="h3"></h1>
+        <h1 id="h4"></h1>
+        <h1 id="h5"></h1>
+        <div>
+            <button onclick="add()">+</button>
+            <button onclick="sub()">-</button>
+            <button onclick="mul()">*</button>
+            <button onclick="div()">\</button>
+            <button onclick="mod()">%</button>
+        </div>
+    </body>
+    <script>
+        function add()
+        {
+            let x=10;
+            let y=20;
+            document.getElementById("h1").innerHTML=x+y;
+        }
+        function sub()
+        {
+            let x=10;
+            let y=20;
+            document.getElementById("h2").innerHTML=x-y;
+        }
+        function mul()
+        {
+            let x=10;
+            let y=20;
+            document.getElementById("h3").innerHTML=x*y;
+        }
+        function div()
+        {
+            let x=10;
+            let y=20;
+            document.getElementById("h4").innerHTML=x/y;
+        }
+        function mod()
+        {
+            let x=10;
+            let y=20;
+            document.getElementById("h5").innerHTML=x%y;
+        } 
+    </script>
+</html>
+        
