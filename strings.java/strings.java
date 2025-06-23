@@ -1,4 +1,4 @@
-/Differnt ways of creating Strings
+//Differnt ways of creating Strings
 class Strings
 {
     public static void main(String[] args)
@@ -67,6 +67,18 @@ class Strings
         }
 }
 
+//matching a string in regular expressions
+class Expressions
+{
+    public static void main(String[] args)
+    {
+        String reg="[a-zA-Z]+\\d+";
+        String a="java44";
+        System.out.println(a.matches(reg));
+    }
+}
+
+
 //comparing strings using equals methods
 class Strings
 {
@@ -80,22 +92,6 @@ class Strings
          System.out.println(s2.equals(s3));
         System.out.println(s2==s3);
     }
-}
-
-
-//comparing strings using equals methods
-class Strings
-{
-    public static void main(String[] args)
-    {
-        String s1="lalithaprasanna";
-        String s2=  new String("lalithaprasanna");
-        String s3="prasanna";
-        System.out.println(s1==s2);
-         System.out.println(s1.equals(s2));
-         System.out.println(s2.equals(s3));
-        System.out.println(s2==s3);
-       }
 }
 
 //startswith ,endswith.compareTo,equalsIgnoreCase methods
@@ -138,6 +134,18 @@ class Strings
     }
 }
 
+//spliting of  a string
+import java.util.Arrays;
+
+class Strings {
+    public static void main(String[] args) {
+        String s1 = "lalithaprasanna";
+        String[] s2 = s1.split("i");
+        System.out.println(Arrays.toString(s2));
+    }
+}
+
+
 
 //converting a number into a string using valueOf()
 class Strings
@@ -148,6 +156,18 @@ class Strings
         String s1=String.valueOf(a);
         System.out.println(s1);
         System.out.println(s1.length());
+    }
+}
+
+//converting integer object to string
+class Strings
+{
+    public static void main(String[] args)
+    {
+        int a=123;
+        String s1=Integer.toString(a);
+        System.out.println(s1);
+       
     }
 }
 
@@ -167,68 +187,6 @@ class Strings
        
     }
 }
-
-//converting integer object to string
-class Strings
-{
-    public static void main(String[] args)
-    {
-        int a=123;
-        String s1=Integer.toString(a);
-        System.out.println(s1);
-       
-    }
-}
-
-
-//spliting of  a string
-import java.util.Arrays;
-
-class Strings {
-    public static void main(String[] args) {
-        String s1 = "lalithaprasanna";
-        String[] s2 = s1.split("i");
-        System.out.println(Arrays.toString(s2));
-    }
-}
-
-
-//matching a string in regular expressions
-class Expressions
-{
-    public static void main(String[] args)
-    {
-        String reg="[a-zA-Z]+\\d+";
-        String a="java44";
-        System.out.println(a.matches(reg));
-    }
-}
-
-//replacing the characters
-class Strings
-{
-    public static void main(String[] args)
-    {
-        String s1="lalli";
-        System.out.println("original string is :"+s1);
-        String s2=s1.replace("lalli","lalitha");
-        System.out.println("replaced string is :"+s2);
-    }
-}
-
-
-//converting a number into a string using valueOf()
-class Strings
-{
-    public static void main(String[] args)
-    {
-        int a=2025;
-        String s1=String.valueOf(a);
-        System.out.println(s1);
-        System.out.println(s1.length());
-    }
-}
-
 
 
 //converting integer object to string
