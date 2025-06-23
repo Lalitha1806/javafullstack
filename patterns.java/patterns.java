@@ -1,4 +1,4 @@
-/*
+
 //single star
 public class Patterns
 {
